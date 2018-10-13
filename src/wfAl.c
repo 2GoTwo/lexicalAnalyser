@@ -92,6 +92,12 @@ uniLex* nextUniLex(void){
     		return uniLex;
     	}
     }
+    else if(c == '=')
+    {
+    	strcpy(uniLex->name,"OPERL");
+    	strcpy(uniLex->value,"EGAL");
+    	return uniLex;
+    }
     /* === operators === */
 
     /* === identifiers === */
